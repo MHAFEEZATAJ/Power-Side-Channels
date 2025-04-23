@@ -165,7 +165,7 @@ def main():
             #scope.WriteString(r"""vbs? 'return=app.acquisition.triggermode' """, 1)
             val=[]
             val = np.array(scope.GetIntegerWaveform("C1", 13000, 0))
-            # print(type(scope.GetNativeWaveform("C1", 13000, 0)))
+            # print(type(scope.GetNativeWaveform("C3", 13000, 0)))
             # val=scope.ReadString(100000)
             pt_int = np.array(pt_int).flatten()
             val = np.array(val).flatten()
